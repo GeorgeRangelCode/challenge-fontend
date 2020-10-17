@@ -1,0 +1,136 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  margin: 0;
+}
+
+main {
+  height: 667px;
+  width: 375px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: #dd141d;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+}
+
+.header img {
+  margin-left: 28.54px;
+}
+
+.profile {
+  background-color: #d9d9d9;
+  height: 92.35px;
+}
+
+.profile__name {
+  margin: 0;
+  color: #575757;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  padding: 10.65px;
+}
+
+.profile__menu {
+  display: flex;
+}
+
+.profile__menu--icon {
+  margin-left: 10.04px;
+}
+
+.profile__menu--title {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-left: 9.94px;
+}
+
+.profile__text {
+  margin: 0;
+  margin-left: 41.48px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 12px;
+}
+
+.content {
+  height: 495.65px;
+  background-color: #eaeaea;
+}
+
+.content__back {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.content__back a {
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.content__back span {
+  margin-left: 5.31px;
+  color: #444444;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content__item {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 27px;
+}
+
+.content__item--text {
+  color: #575756;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 0 10px;
+  width: 289px;
+}
+
+.content__text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.content__text p {
+  color: #575756;
+  width: 188px;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.content__text p span {
+  font-weight: bold;
+}
+
+.content__button {
+  display: flex;
+  justify-content: center;
+}
+
+.content__button button {
+  background-color: #dd141d;
+  border: none;
+  width: 130px;
+  height: 39px;
+  border-radius: 7px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
