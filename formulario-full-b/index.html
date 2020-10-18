@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Icon -->
+  <link rel="icon" href="https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico"
+    type="image/x-icon">
+  <!-- Title -->
+  <title>Formulario - Full B</title>
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <img src="../assets/logo.svg" alt="logo davivienda">
+      <img src="../assets/close.svg" alt="logo cerrar">
+    </header>
+
+    <section class="profile">
+      <h1 class="profile__name">CRISTIAN DAVID ARIAS CORREA</h1>
+      <div class="profile__menu">
+        <img class="profile__menu--icon" src="../assets/menu-icon.svg" alt="icono menu">
+        <span class="profile__menu--title">Prueba</span>
+      </div>
+      <p class="profile__text">Formulario</p>
+    </section>
+
+    <section class="content">
+      <div class="content__back">
+        <a href="#">
+          <img src="../assets/back-icon.svg" alt="icono atras">
+        </a>
+        <span>Atras</span>
+      </div>
+
+      <div class="content__form">
+        <form>
+          <h1>
+            Indique los siguientes datos para continuar con la solicitud de su adelanto de pensión:
+          </h1>
+
+          <div class="content__form--group">
+            <label for="monthly_income">¿Cuál es el valor total de sus ingresos mensuales?</label>
+            <input name="monthly_income" id="monthly_income" type="text" onkeyup="validateForm()">
+          </div>
+
+          <div class="content__form--group">
+            <label for="work_activity">¿Cuál es su actividad laboral actual?</label>
+            <select name="work_activity" id="work_activity" onchange="validateForm()">
+              <option value="" disabled selected>Seleccione una opción</option>
+              <option value="Empleado">Empleado</option>
+            </select>
+          </div>
+
+          <div class="content__form--group">
+            <label for="company_name">¿Cuál es el nombre de su empresa?</label>
+            <input name="company_name" id="company_name" type="text" onkeyup="validateForm()">
+          </div>
+
+          <div class="content__form--group">
+            <label for="contract_type">¿Qué tipo de contrato tiene?</label>
+            <select name="contract_type" id="contract_type" onchange="validateForm()">
+              <option value="" disabled selected>Seleccione una opción</option>
+              <option value="Término indefinido">Término indefinido</option>
+            </select>
+          </div>
+
+          <div class="content__form--group">
+            <label for="residence_city">¿Cuál es su ciudad de residencia?</label>
+            <input name="residence_city" id="residence_city" type="text" onkeyup="validateForm()">
+          </div>
+
+          <div class="content__form--group">
+            <label for="residence_address">¿Cuál es su dirección de residencia?</label>
+            <select class="input__type--direction" name="contract_type" id="contract_type" onchange="validateForm()">
+              <option value="" disabled selected>Seleccione</option>
+              <option value="Calle">Calle</option>
+            </select>
+            <input class="input__direction" name="residence_address" id="residence_address" type="text"
+              onkeyup="validateForm()">
+            <span class="input__separator">#</span>
+            <input class="input__direction" name="residence_address" id="residence_address" type="text"
+              onkeyup="validateForm()">
+            <span class="input__separator">-</span>
+            <input class="input__direction" name="residence_address" id="residence_address" type="text"
+              onkeyup="validateForm()">
+          </div>
+
+          <div class="content__form--group">
+            <label for="address_description">Torre / Piso /Apartamento / Otro:</label>
+            <input name="address_description" id="address_description" type="text" placeholder="Opcional"
+              onkeyup="validateForm()">
+          </div>
+
+          <div class="content__form--group">
+            <label for="advisory_help">Si está recibiendo ayuda de un <span>asesor del Banco</span>, ingrese el código
+              del asesor:</label>
+            <input name="advisory_help" id="advisory_help" class="icon-question" type="text" placeholder="Opcional"
+              onkeyup="validateForm()">
+          </div>
+        </form>
+      </div>
+
+      <div class="content__button">
+        <button class="disabled__button" id="send__data" disabled onclick="sendData()">Continuar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
