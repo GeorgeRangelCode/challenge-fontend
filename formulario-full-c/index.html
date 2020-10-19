@@ -13,7 +13,7 @@
   <link rel="icon" href="https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico"
     type="image/x-icon">
   <!-- Title -->
-  <title>Resultado</title>
+  <title>Formulario - Full C</title>
 </head>
 
 <body>
@@ -27,48 +27,49 @@
       <h1 class="profile__name">CRISTIAN DAVID ARIAS CORREA</h1>
       <div class="profile__menu">
         <img class="profile__menu--icon" src="../assets/menu-icon.svg" alt="icono menu">
-        <span class="profile__menu--title">Compra de Cartera Móvil</span>
+        <span class="profile__menu--title">Prueba</span>
       </div>
-      <p class="profile__text">Resultado</p>
+      <p class="profile__text">Formulario</p>
     </section>
 
     <section class="content">
-      <div class="content__card">
-        <div class="content__card--header">
-          <h2>Adelanto de pensión y seguro</h2>
-        </div>
+      <div class="content__back">
+        <a href="#">
+          <img src="../assets/back-icon.svg" alt="icono atras">
+        </a>
+        <span>Atras</span>
+      </div>
 
-        <div class="content__card--text">
-          <div>
-            <img class="" src="../assets/check.svg" alt="icono check">
-            <h2>Los productos fueron aprobados satisfactoriamente.</h2>
-          </div>
-          <p>En un un plazo máximo de <span>5 días calendario</span>, se le informará por medio de un mensaje de texto
-            el estado de
-            sus productos.</p>
-        </div>
+      <div class="content__form">
+        <div>
+          <h1>
+            ¿Cómo quiere pagar su seguro?
+          </h1>
+          <section class="content__form--inputs">
+            <input type="radio" id="month" name="radio-group">
+            <label for="month">Mensual</label>
+            <input type="radio" id="year" name="radio-group">
+            <label for="year">Anual</label>
+          </section>
+          <h1>
+            Seleccione el tipo de cobertura que desea adquirir:
+          </h1>
+          <section class="card__input--item">
 
-        <div class="content__item">
-          <h2>Adelanto de pensión:</h2>
-          <p>Aprobado</p>
-        </div>
+          </section>
+          <section class="card__input--item">
 
-        <div class="content__item">
-          <h2>Tipo de seguro:</h2>
-          <p>Familiar - 106.200 mensual</p>
-        </div>
-
-        <div class="content__item">
-          <h2>Fecha y hora:</h2>
-          <p>29/01/2020, 09:41 a.m.</p>
+          </section>
         </div>
       </div>
 
+
       <div class="content__button">
-        <button>Finalizar</button>
+        <button class="disabled__button" id="send__data" disabled onclick="sendData()">Continuar</button>
       </div>
     </section>
   </main>
+
 </body>
 
 </html>
