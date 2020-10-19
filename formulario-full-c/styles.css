@@ -92,7 +92,7 @@ main {
 
 .content__form div {
   background-color: #f8f8f8;
-  height: 300px;
+  height: 270px;
   width: 355px;
   border-radius: 10px;
   box-shadow: 0 1px 3px #00000029;
@@ -144,6 +144,44 @@ main {
   box-shadow: 0 1px 3px #00000029;
   margin: 0 auto;
   margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.card__input {
+  position: relative;
+  top: -15px;
+  margin-left: 15px;
+}
+
+.card__article {
+  margin-left: 12px;
+}
+
+.card__picture {
+  margin-left: 105px;
+}
+
+.card__input--item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.card__input--item > article > h1 {
+  margin: 0;
+  color: #575757;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  width: 110px;
+}
+
+.card__input--item > article > p {
+  margin: 0;
+  color: #575757;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .card__input--title {
